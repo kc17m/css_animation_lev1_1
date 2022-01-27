@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+section {
+    text-align: center;
+    padding: 45vh 0 45vh 0 ;
+    font-size: 3rem;
+
+}
+a {
+    text-decoration: none;
+    color: #000;
+    
+}
+
+#yellow {
+    background: yellow;
+}
+
+#red {
+    background: red;
+}
+
+#green {
+    background: green;
+}
+
+
+
+p:active {
+    
+    transition: all .5s linear;
+    animation-name: scroll;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-delay: 0s;
+}
+
+@keyframes scroll {
+    0% {
+        padding: 0%;
+        opacity: 50%;
+
+    }
+    25% {
+        padding: 2%;
+        opacity: 30%;
+
+    }
+    50% {
+        padding: 0%;
+        opacity: 20%;
+    }
+    75% {
+        padding: 2%;
+        opacity: 10%;
+    }
+    100% {
+        padding: 0%;
+        opacity: 0%;
+    }
+}
